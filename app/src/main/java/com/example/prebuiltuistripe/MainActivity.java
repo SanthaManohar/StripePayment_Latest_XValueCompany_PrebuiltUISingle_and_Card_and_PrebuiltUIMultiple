@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button payButton;
     Button cardButton;
     Button cardButtontwo;
+    Button cardButtonthree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         payButton = (Button)findViewById(R.id.paybutton);
         cardButton = (Button)findViewById(R.id.cardButton);
         cardButtontwo = (Button)findViewById(R.id.cardButtontwo);
+        cardButtonthree = (Button)findViewById(R.id.prebuiltmulti);
 
         payButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,CardLatestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardButtonthree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PrebuiltMulti.class);
                 startActivity(intent);
             }
         });

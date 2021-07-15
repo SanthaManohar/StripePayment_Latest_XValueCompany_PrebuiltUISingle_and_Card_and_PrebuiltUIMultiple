@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrebuiltUIStripe"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CardLatestActivity"></activity>
+        <activity android:name=".PrebuiltMulti"></activity>
+        <activity android:name=".CardLatestActivity" />
         <activity android:name=".CardActivity" />
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".MainActivity">
